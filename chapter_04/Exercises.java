@@ -56,9 +56,13 @@ public class Exercises {
 	static void exercise2(String input) {
 		char[] chars = input.toCharArray();
 		int len = chars.length - 4;
-		char[] x = new char[len];
+		char[] x = new char[len + 4];
 		for (int i = 0; i < len; i++) {
-			
+			x[i]= 'X';
 		}
+		for (int i = 0; i < 4; i++) {
+			x[len + i] = chars[len + i];
+		}
+		System.out.println(String.valueOf(x));
 	}
 }
